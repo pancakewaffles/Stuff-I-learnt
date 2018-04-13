@@ -1,0 +1,22 @@
+1492587449054	geckodriver	INFO	Listening on 127.0.0.1:60496
+1492587451079	mozprofile::profile	INFO	Using profile path C:\Users\CHAVEZ~1\AppData\Local\Temp\rust_mozprofile.WWa2OwGLT0KY
+1492587451082	geckodriver::marionette	INFO	Starting browser C:\Program Files\Firefox Developer Edition\firefox.exe with args []
+1492587451091	geckodriver::marionette	INFO	Connecting to Marionette on localhost:60503
+1492587451590	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
+[GPU 9364] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-aurora-w64-ntly-000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8384] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-aurora-w64-ntly-000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8384] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-aurora-w64-ntly-000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1492587452687	Marionette	INFO	Listening on port 60503
+1492587453101	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+[GPU 9364] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-aurora-w64-ntly-000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17200] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-aurora-w64-ntly-000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1492592821766	Marionette	INFO	Ceased listening
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

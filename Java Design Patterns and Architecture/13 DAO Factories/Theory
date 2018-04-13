@@ -1,0 +1,11 @@
+So now that we have our DAO, we can automate the process of creating DAOs by using DAO Factories.
+Right now, let's recap a little:
+
+We started off with a simple Model View Controller pattern, which provided a macro-overview for our program.
+Then we dived into the Observer Pattern, a miro-overview for relationships between the Model, View and Controller.
+We were able to create listeners (as interfaces) to connect different parts of the MVC.
+Then we dived into the Singleton Pattern which allowed us to create a global variable - a universal Database of sorts.
+Then we moved to Data Access Objects and Beans.
+Beans are information classes, i.e. transfer objects that are added/removed to a Database.
+We saw how to interact with them, using the Data Access Object classes, which are required for each Bean because DAOs are the ones who REALLY interact with the database.
+Finally we create a DAO Factory to automate the process of create DAOs. It's just a class that returns new PersonDAO() and returns new LogDAO().

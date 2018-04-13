@@ -1,0 +1,27 @@
+package com.caveofprogramming.designpatterns.demo1.model;
+
+import java.util.List;
+
+public class MySQLLogDAO implements LogDAO {
+	
+	/* (non-Javadoc)
+	 * @see com.caveofprogramming.designpatterns.demo1.model.LogDAO#addEntry(java.lang.String)
+	 */
+	@Override
+	public void addEntry(String message){
+		// Get current time and add log message to database.
+		
+	}
+	
+	/* (non-Javadoc)
+	 * @see com.caveofprogramming.designpatterns.demo1.model.LogDAO#getEntries(int)
+	 */
+	@Override
+	public List<Log> getEntries(int number){
+		//Get latest "number" log messages.
+		return null;
+		
+	}
+	
+	//Maybe no need for update or delete in this case. It's just setting and getting from the database.
+}

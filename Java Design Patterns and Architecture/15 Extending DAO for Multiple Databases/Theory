@@ -1,0 +1,29 @@
+Extending DAO for Multiple Databases.
+
+PersonDAO and LogDAO have to be coded differently for different databases. This is because different databases (Oracle, SQL) have different implementations. The interface shouldn't change.
+So we would have to write one DAO for each Database. That is horribly inefficient.
+What we do is we go to our PersonDAO (Or MySQLPersonDAO because we renamed it) class and "extract interface" from it. We therefore create 
+a new interface called PersonDAO which implements all the different functions of PersonDAO.
+MySQLPersonDAO becomes a specific implementation of PersonDAO.
+
+Main Idea: This is because the interface for the DAO (general functions and methods) shouldn't change, whereas the implementation (MySQL/Oracle) does.
+
+So after doing that we can go ahead and implement different DAOs for the different databases. E.g. OraclePersonDAO and OracleLogDAO.
+
+What we can do now is to tidy things up in the DAOFactory, which creates DAOs for us. We do the same to the DAOFactory, creating a DAOFactory interface, and
+having MySQLDAOFactory and OracleDAOFactory implement that interface. MySQLDAOFactory and OracleDAOFactory would become DAOFactories for their specific databases.
+
+Abstracting the DAOs as interfaces, and creating database-specific DAOs as specific implementations of the interface.
+
+One last little touch: Change the DAOFactory into an abstract class. Take a look at DAOFactory.java
+
+So here's the flow:
+
+DAOFactory (creates the specific DAOFactory for your database) 
+--> MySQLDAOFactory (creates MySQL-specific DAOs such as MySQLLogDAO and MySQLPersonDAO)
+ --> MySQLPersonDAO (implements database-specific methods from PersonDAO )
+  --> PersonDAO (a connection manager to connect to the database.)
+
+
+
+

@@ -1,0 +1,25 @@
+/*
+ * Front-End vs Back-End
+ * Golden rules:
+ * Front-End always imports Back-End
+ * Back-End NEVER imports Front-End
+ * Front-End may have bugs etc but Back-End must always work
+ * 
+ * Model-View-Controller(MVC) Theory
+ * Model = Data (holding some data, interface with some data, data model etc)
+ * View = Graphic User Interface. Something which interacts with the viewer. It is what the viewer sees. Different views with the same model. Representing data differently.
+ * Controller = "Business Logic". Logic of the application. Stuff that does not deal with the data or the viewer.
+ * 
+ * Views are front-end, models are back-end
+ * 
+ * View <--- (requests) data from --- Model 
+ * View <--- "listens" to --- Model 
+ * 
+ * Model <--- receives instructions from / "listens" to --- Controller
+ * View <--- receives instructions from / "listens" to  --- Controller
+ * 
+ * Controller detects when things happen to the view.
+ * 
+ * MVC can be used for complex applications such as games.
+ * 
+ */

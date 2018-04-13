@@ -1,0 +1,25 @@
+We cannot truly implement the MVC until we can implement the Observer Pattern.
+So what is the Observer Pattern?
+Lots of programs don't use this pattern. But it is common in certain types of programs, such as GUI, Event-driven programming.
+Hardest to understand, because you need an in-depth understanding of interfaces, references and anonymous classes.
+You only need this when you have methods that will run concurrently, or perhaps at an unknown time, to affect your program in the future. (i.e. Non-sequential programs)
+
+
+Subject (E.g. Button, Timer), which we do not know what will happen to it, when that will happen to it. When that happens, it triggers something else to happen. (Event-driven programming)
+
+Observer / Listener - We want this code to run when something happens to the subject (e.g. when the button is clicked)
+
+In a Java program though, nothing is listening to anything, so we have to find a way to make this work.
+So what we do, is that we implement an interface (e.g. EventListener which includes a method called run() )
+Then we pass the subject an object that implements the interface. So when the subject is clicked it will trigger the object's run method.
+A subject can have a whole list of listeners, and will notify each of them by running the code specified by each of them.
+The subject can also pass objects to the listener by making the run() method accept the objects.
+
+
+
+
+
+
+
+
+

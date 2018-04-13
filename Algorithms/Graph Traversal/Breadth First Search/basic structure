@@ -1,0 +1,25 @@
+The Breadth First search is an extremely useful searching technique. 
+It differs from the depth-first search in that it uses a queue to perform the search, so the order in which the nodes are visited is quite different. 
+It has the extremely useful property that if all of the edges in a graph are unweighted (or the same weight) then the first time a node is visited is the shortest path to that node from the source node. 
+You can verify this by thinking about what using a queue means to the search order.
+ When we visit a node and add all the neighbors into the queue, then pop the next thing off of the queue,
+  we will get the neighbors of the first node as the first elements in the queue.
+   This comes about naturally from the FIFO property of the queue and ends up being an extremely useful property. 
+   One thing that we have to be careful about in a Breadth First search is that we do not want to visit the same node twice,
+    or we will lose the property that when a node is visited it is the quickest path to that node from the source.
+    
+    
+void bfs(node start) {
+ queue<node> s;
+ s.push(start);
+ mark start as visited
+ while (s.empty() == false) {
+  top = s.front();
+  s.pop();
+
+  check for termination condition (have we reached the node we want to?)
+
+  add all of top's unvisited neighbors to the queue
+  mark all of top's unvisited neighbors as visited
+ }
+}

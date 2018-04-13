@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="File Hashing"/>
+	<classpathentry kind="src" path="AES"/>
+	<classpathentry kind="src" path="PaddingOracleAttack"/>
+	<classpathentry kind="src" path="DiscreteLogModulo"/>
+	<classpathentry kind="src" path="RSAFactoringChallenge"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="F:/Users/Chavez Tan/Downloads/workspace64/AlgorithmsI/libs/stdlib.jar"/>
+	<classpathentry kind="lib" path="F:/Users/Chavez Tan/Downloads/workspace64/Cryptography I/guava-17.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

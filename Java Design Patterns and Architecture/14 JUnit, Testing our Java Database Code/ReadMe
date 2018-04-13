@@ -1,0 +1,20 @@
+This is a tutorial on JUnit - How to use JUnit
+The project includes the most updated code (i.e. after Lecture 13 DAO Factories) after the implementation
+of DAO Factories. 
+It added codes for PersonDAO under the Model package, such as functions for updatePerson, deletePerson and so on.
+It's a good checkpoint!
+Just for Review: What we have done till now
+We started off with a simple Model View Controller pattern, which provided a macro-overview for our program.
+Then we dived into the Observer Pattern, a miro-overview for relationships between the Model, View and Controller.
+We were able to create listeners (as interfaces) to connect different parts of the MVC.
+Then we dived into the Singleton Pattern which allowed us to create a global variable - a universal Database of sorts.
+Then we moved to Data Access Objects and Beans.
+Beans are information classes, i.e. transfer objects that are added/removed to a Database.
+We saw how to interact with them, using the Data Access Object classes, which are required for each Bean because DAOs are the ones who REALLY interact with the database.
+Finally we create a DAO Factory to automate the process of create DAOs. It's just a class that returns new PersonDAO() and returns new LogDAO().
+
+
+So to use JUnit, we create another folder called JUnittests, and in it create a JUnit Test Case. 
+It is basically just a java class with some particular methods to test a class.
+
+

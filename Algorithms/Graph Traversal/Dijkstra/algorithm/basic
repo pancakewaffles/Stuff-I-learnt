@@ -1,0 +1,33 @@
+
+// uses a Heap data structure
+// The heap data structure has the unique advantage that the top element is either the highest or lowest element,
+depending on the implementation
+
+The heap data structure equivalent in Java is the TreeSet Structure, which does full ordering of the dataset
+
+
+void dijkstra(node start) {
+ priorityQueue s;
+ s.add(start);
+ while (s.empty() == false) {
+  top = s.top();
+  s.pop();
+  mark top as visited;
+  }
+  }
+
+  
+
+to define the ordering we do something like this
+class Node implements Comparable {
+ public int cost, at;
+
+ public int CompareTo(Object o) {
+  Node right = (Node)o;
+  if (cost < right.cost) return -1;
+  if (cost > right.cost) return 1;
+  if (at < right.at) return -1;
+  if (at > right.at) return 1;
+  return 0;
+ }
+}
